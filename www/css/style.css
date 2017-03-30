@@ -1,0 +1,32 @@
+a[data-role='button'], button {
+  width:90%; margin:10px auto 10px; display:block; text-align:center;
+  padding:20px 0; background:#FFF; border:1px solid #CCCCCC;
+  border-radius:4px; box-shadow:1px 1px 6px -3px #000;
+  color:#333; text-decoration:none; font-weight:700; font-size:1.8em;
+}
+.img {
+  float: left;
+}
+/*
+#gallery {
+  display: none;
+}
+.imgHolder {
+  position: relative;
+  width: 100px;
+  display: inline-block;
+  padding: 3px;
+}
+img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+*/
+.checked:before {
+  content: "√";
+  color:#289f81;
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+}

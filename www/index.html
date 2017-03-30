@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: http://www.rejicast.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Rejicast</title>
+    </head>
+    <body>
+        <div id="appHolder">
+            <div id="topHolder">
+                <div id="logoHolder">
+                    <img id="logo" src="img/logo.png" />
+                </div>
+                <div id="titleHolder">
+                    Face in Cast
+                </div>
+            </div>
+            <div id="contentHolder" class="index">
+                <a class="grayBtn" href="apply.html" data-transition="slide" data-role="button">Başvuru Yap</a>
+                <a class="grayBtn" href="edit.html" data-transition="slide" data-role="button">Profilimi Düzenle</a>
+                <a class="grayBtn" href="filtres.html" data-transition="slide" data-role="button">Cast ara</a>
+                <a class="grayBtn" href="login.html" data-transition="slide" data-role="button" id="loginBtn">Giriş yap</a>
+                <a class="grayBtn" data-role="button" id="logoutBtn" onClick="logout()">Çıkış yap</a>
+            </div>
+            <div id="contact">
+              <div id="phoneContact">
+                <a href="tel:02129831727"><img id="phoneIcon" src="img/phone.png" /><span>0212 983 17 27</span></a>
+              </div>
+              <div id="mailContact">
+                <a href="mailto:info@faceincast.com"><img id="mailIcon" src="img/mail.png" /><span>e-posta</span></a>
+              </div>
+              <div id="addressContact">
+                Şehit Ahmet Sok. İzçınar Konak 2 Apt. 16/1 Daire: 2 Mecidiyeköy / İstanbul
+              </div>
+            </div>
+
+          </div>
+            <div id="navHolder">
+                <div id="homeHolder">
+                    <img id="homeBtn" src="img/homeBtn.png" />
+                </div>
+                <div id="loginHolder">
+                    <p></p>
+                </div>
+                <div id="notificationHolder">
+                    <div id="notification"></div>
+                    <img id="notificationBtn" src="img/notificationBtn.png" />
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
