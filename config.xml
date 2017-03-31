@@ -32,5 +32,4 @@
         <variable name="PHOTO_LIBRARY_USAGE_DESCRIPTION" value="" />
     </plugin>
     <plugin name="cordova-plugin-file" spec="~4.3.2" />
-    <plugin name="cordova-plugin-photos" spec="~1.0.8" />
 </widget>

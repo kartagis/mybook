@@ -7,22 +7,6 @@ a[data-role='button'], button {
 .img {
   float: left;
 }
-/*
-#gallery {
-  display: none;
-}
-.imgHolder {
-  position: relative;
-  width: 100px;
-  display: inline-block;
-  padding: 3px;
-}
-img {
-  width: 100px;
-  height: auto;
-  cursor: pointer;
-}
-*/
 .checked:before {
   content: "√";
   color:#289f81;
