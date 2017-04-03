@@ -1,10 +1,11 @@
 document.addEventListener("deviceready", function() {
+  $("#btn").css("display","none");
   cordova.plugins.photoLibrary.getLibrary(function(res) {
     var library = res.library;
     var images = '';
     console.log(library.length);
     library.forEach(function(libraryItem) {
-      images += "<div class='imgHolder'><img class='img' src='"+libraryItem.thumbnailURL+"' data-id='"+libraryItem.id+"' style='margin: 5px' /></div>";
+      images += "<div class='imgHolder'><img class='img' src='"+libraryItem.thumbnailURL+"' data-src='"+libraryItem.id+"' style='margin: 5px' /></div>";
     })
     $("#images").html(images);
   }, function(err) {
@@ -16,7 +17,9 @@ document.addEventListener("deviceready", function() {
     includeAlbumData:false,
   })
 });
-$(".imgHolder").on("click", function() {
+$("#images").on("click", ".imgHolder", function() {
   $(this).addClass("checked");
-  localStorage.setItem($(this).find('img').data('id'),$(this).find('img').attr('src'));
+  var imgSRC = $(this).find('img').data('src').split(";");
+  localStorage.setItem(imgSRC[0],imgSRC[1]);
+  $("#btn").css("display","block");
 })
