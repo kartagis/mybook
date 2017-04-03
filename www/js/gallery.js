@@ -4,7 +4,7 @@ document.addEventListener("deviceready", function() {
     var images = '';
     console.log(library.length);
     library.forEach(function(libraryItem) {
-      images += "<div class='imgHolder'><img class='img' src='"+libraryItem.thumbnailURL+"' style='margin: 5px' /></div>";
+      images += "<div class='imgHolder'><img class='img' src='"+libraryItem.thumbnailURL+"' data-id='"+libraryItem.id+"' style='margin: 5px' /></div>";
     })
     $("#images").html(images);
   }, function(err) {
@@ -16,3 +16,7 @@ document.addEventListener("deviceready", function() {
     includeAlbumData:false,
   })
 });
+$(".imgHolder").on("click", function() {
+  $(this).addClass("checked");
+  localStorage.setItem($(this).find('img').data('id'),$(this).find('img').attr('src'));
+})
