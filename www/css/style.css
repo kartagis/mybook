@@ -11,6 +11,6 @@ a[data-role='button'], button {
   content: "√";
   color:#289f81;
   position: absolute;
-  bottom: 1px;
+  top: 1px;
   right: 1px;
 }
